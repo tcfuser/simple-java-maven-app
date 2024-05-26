@@ -21,5 +21,10 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
+        stage('Print') {
+            steps {
+                sh 'echo "Testing Multi Branch Pipeline"'
+            }
+        }
     }
 }
